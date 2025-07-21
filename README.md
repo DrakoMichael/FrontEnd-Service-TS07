@@ -14,8 +14,8 @@ O código-fonte está organizado na pasta `src`, seguindo uma arquitetura modula
 ## Tecnologias Utilizadas
 
 - **TypeScript**: Linguagem principal do projeto, trazendo tipagem estática e recursos avançados de desenvolvimento.
-- **React** (ou framework utilizado): Para construção da interface de usuário.
-- **Ferramentas de build e automação**: Gerenciadas via scripts no `package.json`.
+- **React** (ou framework utilizado): Para construção da interface de usuário(não implementado ainda).
+- **Ferramentas de build e automação**: Todas gerenciadas via scripts no `package.json`.
 
 ## Scripts do `package.json`
 
@@ -40,8 +40,8 @@ O código-fonte está organizado na pasta `src`, seguindo uma arquitetura modula
 
 ## Contribuição
 
-Contribuições são bem-vindas! Siga as boas práticas de desenvolvimento e mantenha a organização do projeto.
+Projeto de aprendizagem, contribuições são bem-vindas! Siga as boas práticas de desenvolvimento e mantenha a organização do projeto.
 
 ---
 
-Desenvolvido por [Seu Nome ou Equipe].
+Desenvolvido por Drakomichael.
