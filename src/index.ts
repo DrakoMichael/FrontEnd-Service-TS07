@@ -1,15 +1,11 @@
-import express, { json } from 'express';
-import { itemRoutes } from './controllers/ItemRoutes_Controller';
-import { routes } from './interfaces/routes_enum';
+import express from 'express';
+import Router from './controllers/ItemRoutes_Controller';
+import 'dotenv/config'
 
-
-const port: number = 3000;
+const port = process.env.PORT;
 const app = express();
 
-app.use(express.json());
-
-app.use(routes.GET_ALL_ITEMS, itemRoutes);
-app.use(routes.GET_ITEM_PER_ID, itemRoutes);
+app.use(Router);
 
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);

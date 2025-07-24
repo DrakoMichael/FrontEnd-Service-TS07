@@ -1,9 +1,9 @@
 import express, { Request, Response } from 'express';
-import { routes } from '../interfaces/routes_enum';
+import { routesEnum } from '../interfaces/routes_enum';
 
 const Router = express.Router();
 
-Router.get(routes.GET_ALL_ITEMS, (req: Request, res: Response) => {
+Router.get(routesEnum.GET_ALL_ITEMS, (req: Request, res: Response) => {
     try {
         // Simulate fetching items from a database
         const items = [
@@ -17,7 +17,7 @@ Router.get(routes.GET_ALL_ITEMS, (req: Request, res: Response) => {
     }
 });
 
-Router.post(routes.CREATE_ITEM, (req: Request, res: Response) => {
+Router.post(routesEnum.CREATE_ITEM, (req: Request, res: Response) => {
     const newItem = req.body;
     try {
         // Simulate creating a new item
@@ -29,7 +29,7 @@ Router.post(routes.CREATE_ITEM, (req: Request, res: Response) => {
     }
 });
 
-Router.get(routes.GET_ITEM_PER_ID, (req: Request, res: Response) => {
+Router.get(routesEnum.GET_ITEM_PER_ID, (req: Request, res: Response) => {
     const itemId = req.params.id;
     try {
         // Simulate fetching a single item by ID
@@ -40,6 +40,7 @@ Router.get(routes.GET_ITEM_PER_ID, (req: Request, res: Response) => {
         return res.status(500).send('Internal Server Error');
     }
 });
-export const itemRoutes = Router;
+
+export default Router;
 
 
