@@ -41,6 +41,4 @@ Router.get(routesEnum.GET_ITEM_PER_ID, (req: Request, res: Response) => {
     }
 });
 
-export default Router;
-
-
+export const routerController = Router;
